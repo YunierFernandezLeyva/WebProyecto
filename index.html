@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatiza tu Marketing Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Menú de navegación -->
+    <nav class="bg-black fixed w-full z-10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-blue-400 text-2xl font-bold">AUTOMARKET</span>
+                </div>
+                
+                <!-- Menú para desktop -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#inicio" class="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                        <a href="#servicios" class="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                        <a href="#tecnologia" class="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Tecnología</a>
+                        <a href="#clientes" class="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Clientes</a>
+                        <a href="#contacto" class="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                    </div>
+                </div>
+                
+                <!-- Botón hamburguesa para móvil -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-white hover:text-blue-400 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+                <a href="#servicios" class="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+                <a href="#tecnologia" class="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Tecnología</a>
+                <a href="#clientes" class="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Clientes</a>
+                <a href="#contacto" class="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        <span class="text-blue-400">Automatiza</span> tu Marketing Digital
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8">
+                        Potencia tu negocio con nuestras soluciones de marketing automatizado. Ahorra tiempo, aumenta tus conversiones y escala tu empresa sin esfuerzo.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
+                            Solicitar Demo
+                        </a>
+                        <a href="#servicios" class="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
+                            Conoce Más
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Marketing Automatizado" 
+                         class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-500">
+                    <div class="absolute -bottom-5 -right-5 bg-blue-500 w-24 h-24 rounded-full flex items-center justify-center shadow-xl">
+                        <i class="fas fa-robot text-4xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Nuestros <span class="text-blue-400">Servicios</span> Automatizados
+                </h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    Soluciones tecnológicas diseñadas para optimizar cada aspecto de tu estrategia de marketing digital.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-envelope-open-text text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Marketing Automatizado</h3>
+                    <p class="text-gray-300">
+                        Secuencias de emails personalizadas que se activan según el comportamiento de tus clientes, aumentando la conversión sin esfuerzo.
+                    </p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-ad text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Publicidad Inteligente</h3>
+                    <p class="text-gray-300">
+                        Campañas publicitarias que se optimizan automáticamente basadas en el rendimiento, maximizando tu ROI.
+                    </p>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Análisis Predictivo</h3>
+                    <p class="text-gray-300">
+                        Nuestros algoritmos predicen tendencias y comportamientos del cliente para que tomes decisiones basadas en datos.
+                    </p>
+                </div>
+                
+                <!-- Servicio 4 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-comments text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Chatbots Avanzados</h3>
+                    <p class="text-gray-300">
+                        Asistentes virtuales que atienden a tus clientes 24/7, generan leads y programan citas sin intervención humana.
+                    </p>
+                </div>
+                
+                <!-- Servicio 5 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Gestión de Redes Sociales</h3>
+                    <p class="text-gray-300">
+                        Publicación automática, interacción inteligente y análisis de contenido para mantener tu presencia social siempre activa.
+                    </p>
+                </div>
+                
+                <!-- Servicio 6 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-funnel-dollar text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Automatización de Embudos</h3>
+                    <p class="text-gray-300">
+                        Embudos de venta completos que guían a tus prospectos desde el primer contacto hasta la compra final sin intervención.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tecnología -->
+    <section id="tecnologia" class="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0 order-2 lg:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Tecnología de <span class="text-blue-400">Vanguardia</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Nuestra plataforma utiliza inteligencia artificial y machine learning para ofrecerte las soluciones más avanzadas en marketing automatizado.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-400 mr-4 mt-1">
+                                <i class="fas fa-brain text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Inteligencia Artificial</h4>
+                                <p class="text-gray-300">
+                                    Nuestros sistemas aprenden de cada interacción para optimizar continuamente tus campañas.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-400 mr-4 mt-1">
+                                <i class="fas fa-database text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Big Data</h4>
+                                <p class="text-gray-300">
+                                    Procesamos millones de puntos de datos para ofrecerte insights accionables en tiempo real.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-400 mr-4 mt-1">
+                                <i class="fas fa-random text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Integraciones</h4>
+                                <p class="text-gray-300">
+                                    Conectamos con todas las plataformas principales para un flujo de trabajo perfecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2 relative">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Tecnología de marketing" 
+                             class="rounded-lg">
+                    </div>
+                    <div class="absolute -top-8 -left-8 bg-blue-500 w-20 h-20 rounded-full flex items-center justify-center shadow-xl">
+                        <i class="fas fa-microchip text-3xl text-white"></i>
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-blue-500 w-20 h-20 rounded-full flex items-center justify-center shadow-xl">
+                        <i class="fas fa-code text-3xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Clientes -->
+    <section id="clientes" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Nuestros <span class="text-blue-400">Clientes</span>
+                </h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    Empresas que han transformado su marketing con nuestras soluciones automatizadas.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center h-24">
+                    <span class="text-xl font-bold text-blue-400">TECHNOVA</span>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center h-24">
+                    <span class="text-xl font-bold text-blue-400">DIGITALIS</span>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center h-24">
+                    <span class="text-xl font-bold text-blue-400">INNOVATE</span>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center h-24">
+                    <span class="text-xl font-bold text-blue-400">NEXUS</span>
+                </div>
+            </div>
+            
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        "La automatización de nuestro marketing ha sido revolucionaria. Hemos aumentado nuestras ventas en un 300% con menos trabajo."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">AM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Martínez</h4>
+                            <p class="text-sm text-gray-400">CEO, Technova</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        "Nunca imaginé que el marketing podría ser tan eficiente. Ahora nuestro equipo se enfoca en estrategia mientras la plataforma ejecuta."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">CR</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Carlos Ruiz</h4>
+                            <p class="text-sm text-gray-400">CMO, Digitalis</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        "Los reportes predictivos nos han permitido anticipar tendencias y estar siempre un paso adelante de la competencia."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">LG</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Laura Gómez</h4>
+                            <p class="text-sm text-gray-400">Directora de Marketing, Innovate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        <span class="text-blue-400">Contáctanos</span> para Automatizar tu Marketing
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Completa el formulario y uno de nuestros expertos se pondrá en contacto contigo para mostrarte cómo podemos transformar tu estrategia de marketing.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-400 mr-4 mt-1">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Email</h4>
+                                <p class="text-gray-300">
+                                    info@automarket.com
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-400 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Teléfono</h4>
+                                <p class="text-gray-300">
+                                    +1 (555) 123-4567
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-400 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Oficina</h4>
+                                <p class="text-gray-300">
+                                    Av. Tecnológica 1234, Ciudad Digital
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-300 mb-1">Empresa</label>
+                            <input type="text" id="company" name="company" 
+                                   class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">AUTOMARKET</h3>
+                    <p class="text-gray-300">
+                        Líderes en soluciones de marketing digital automatizado para empresas que buscan escalar sin límites.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#servicios" class="text-gray-300 hover:text-blue-400 transition">Email Marketing</a></li>
+                        <li><a href="#servicios" class="text-gray-300 hover:text-blue-400 transition">Publicidad Automatizada</a></li>
+                        <li><a href="#servicios" class="text-gray-300 hover:text-blue-400 transition">Chatbots Inteligentes</a></li>
+                        <li><a href="#servicios" class="text-gray-300 hover:text-blue-400 transition">Gestión de Redes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Empresa</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-300 hover:text-blue-400 transition">Inicio</a></li>
+                        <li><a href="#tecnologia" class="text-gray-300 hover:text-blue-400 transition">Tecnología</a></li>
+                        <li><a href="#clientes" class="text-gray-300 hover:text-blue-400 transition">Clientes</a></li>
+                        <li><a href="#contacto" class="text-gray-300 hover:text-blue-400 transition">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2023 AUTOMARKET. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Términos</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Formulario de contacto
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling para los enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
